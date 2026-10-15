@@ -80,4 +80,14 @@ Resource: Anonymisation | ICO - https://ico.org.uk/for-organisations/uk-gdpr-gui
 
 Misconception in My Track
 
+A common misconception is that adopting IPv6 automatically makes a network more secure than IPv4. In reality, IPv6 mainly 
+expands addressing capabilities; it does not eliminate network security risks. Incorrect firewall rules, weak access controls, 
+and insufficient monitoring can still expose services to attacks. The government must apply appropriate security policies to 
+both IPv4 and IPv6 traffic. RFC 8200, Section 10, “Security Considerations,” discusses security risks and the role of 
+IP security mechanisms, showing why IPv6 adoption alone is not a complete security solution.
+
+
 Open Question
+
+How will the government test IPv6 connectivity, firewall rules, and security monitoring across mobile devices, APIs, 
+and backend services before launching the assistant?
