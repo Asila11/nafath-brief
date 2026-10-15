@@ -45,12 +45,38 @@ ATS normally blocks the request unless a suitable exception is configured. This 
 the assistant from retrieving answers. The government should use HTTPS endpoints and avoid weakening ATS protections.
 
 Resource: Preventing Insecure Network Connections | Apple Developer Documentation - https://developer.apple.com/documentation/security/preventing-insecure-network-connections
+
+
 Networking
+
+IPv4 uses 32-bit addresses, whereas IPv6 uses 128-bit addresses, providing a much larger address space. 
+This supports a growing number of connected devices, including mobile phones, servers, and sensors. 
+For the government assistant, IPv6 readiness should be assessed across mobile connectivity, APIs, 
+routing, firewalls, and monitoring. IPv6 does not automatically improve security, so networks
+ must be configured and tested carefully.
+
+Resource: RFC 8200 - Internet Protocol, Version 6 (IPv6) Specification - https://www.rfc-editor.org/rfc/rfc8200
 
 
 Cybersecurity
 
+Prompt injection occurs when malicious instructions attempt to manipulate an AI model into ignoring its intended rules. 
+Direct injection comes from a user’s message, while indirect injection is embedded in external content, 
+such as a retrieved webpage. Two mitigations are treating retrieved content as untrusted input and enforcing 
+least-privilege access to backend systems. These controls reduce risk but cannot guarantee complete prevention.
+
+Resource: LLM01: Prompt Injection - OWASP Gen AI Security Project - https://genai.owasp.org/llmrisk2023-24/llm01-24-prompt-injection/
+
+
 Data
+
+Anonymization removes identifying links so individuals are no longer identifiable by means reasonably likely to be used. 
+Pseudonymization replaces identifiers with codes, but additional information may still allow re-identification. Effectively 
+anonymized data falls outside data protection law governing personal data, while pseudonymized chat logs remain personal data. 
+The government should assess re-identification risks before treating chat logs as anonymous.
+
+Resource: Anonymisation | ICO - https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/anonymisation/
+
 
 Misconception in My Track
 
